@@ -13,8 +13,6 @@ from app.serverlibrary import *
 def index():
 	return render_template('index.html', title='Home')
 
-# write down your handler for the routes here
-
-@application.route('/prediction')
+@application.route('/predictions')
 def prediction():
-	return render_template('prediction.html', title='Task 2')
+	return render_template('predictions.html', title='Task 2')

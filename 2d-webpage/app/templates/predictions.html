@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script>
+</head>
+
+<body>
+    <h1>Welcome to {{title}}</h1>
+    <p>
+        hello
+    </p>
+    <label for="vaccination_policy">Choose a value:</label>
+    <select name="vaccination_policy" id="vaccination_policy">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <label for="testing_policy">Choose a value:</label>
+    <select name="testing_policy" id="testing_policy">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <label for="restriction_gatherings">Choose a value:</label>
+    <select name="restriction_gatherings" id="restriction_gatherings">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <label for="facial_coverings">Choose a value:</label>
+    <select name="facial_coverings" id="facial_coverings">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <p>
+        <button onclick="library.get_prediction()">Get Prediction</button>
+    <div id="predictions">...</div>
+    </p>
+    <br><a href="index">Home</a>
+
+</body>
+
+</html>

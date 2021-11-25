@@ -36,15 +36,6 @@ def predict_norm(X, beta):
   y_pred = np.matmul(X, beta)
   return y_pred
 
-def get_data():
-  """Returns a DataFrame with feature values obtained from the frontend."""
-    vaccination_policy = document.getElementsByName("vaccination_policy")
-    testing_policy = document.getElementsByName("testing_policy")
-    facial_coverings = document.getElementsByName("facial_coverings")
-    restriction_gatherings = document.getElementsByName("restriction_gatherings")
-    arr = [vaccination_policy, testing_policy, facial_coverings, restriction_gatherings]
-    return pd.DataFrame(arr, columns=["vaccination_policy", "testing_policy", "facial_coverings", "restriction_gatherings"])
-
 def compute_cost(X, y, beta):
   """Takes a Numpy array containing the features, a Numpy array containing the target, and beta coefficients at the end of the iteration, returns an array of computed cost function values."""
   J = 0
@@ -73,25 +64,24 @@ def gradient_descent(X, y, beta, alpha, num_iters):
     k += 1
   return beta, J
 
-def multiple_linear_regression(df_features, df_target):
-  # Split the data set into training and test
-  df_features_train, df_features_test, df_target_train, df_target_test = split_data(df_features, df_target, random_state=100, test_size=0.3)
+def multiple_linear_regression(df_features_test):
+    df = pd.read_csv("combined-w-cases.csv")
+    df_features, df_target = get_features_targets(df, ["vaccination_policy", "testing_policy", "facial_coverings", "restriction_gatherings"], ["stay_home_requirements"])
+    # Normalize the features using z normalization
+    df_features_z = normalize_z(df_features)
 
-  # Normalize the features using z normalization
-  df_features_z = normalize_z(df_features_train
+    # Change the features and the target to numpy array using the prepare functions
+    X = prepare_feature(df_features_z)
+    target = prepare_target(df_target)
 
-  # Change the features and the target to numpy array using the prepare functions
-  X = prepare_feature(df_features_z)
-  target = prepare_target(df_target)
+    iterations = 1500
+    alpha = 0.1
+    beta = np.zeros((X.shape[1], 1), dtype=float)
 
-  iterations = 1500
-  alpha = 0.1
-  beta = np.zeros((X.shape[1], 1), dtype=float)
+    # Call the gradient_descent function
+    beta, J_storage = gradient_descent(X, target, beta, alpha, iterations)
+    
+    # call the predict() method
+    pred = predict(df_features_test, beta)
 
-  # Call the gradient_descent function
-  beta, J_storage = gradient_descent(X, target, beta, alpha, iterations)
-  
-  # call the predict() method
-  pred = predict(df_features_test, beta)
-
-  return pred
+    return pred

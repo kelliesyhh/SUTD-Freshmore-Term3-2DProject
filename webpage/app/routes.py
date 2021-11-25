@@ -1,18 +1,15 @@
+from flask import render_template
 from app import application
-from flask import render_template, flash, redirect, url_for
-from app.forms import LoginForm, RegistrationForm 
-from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User 
-from werkzeug.urls import url_parse
-from app import db
-from flask import request 
-from app.serverlibrary import * 
 
 @application.route('/')
 @application.route('/index')
 def index():
-	return render_template('index.html', title='Home')
+    return render_template('index.html', title='CovidPrediction.com')
 
-@application.route('/predictions')
-def prediction():
-	return render_template('predictions.html', title='Task 2')
+@application.route('/ex1')
+def exercise1():
+    return render_template('ex1.html', title='Stay Home Notice Guideline Predictor')
+
+@application.route('/ex2')
+def exercise2():
+    return render_template('ex2.html', title='Covid Cases Predictor')

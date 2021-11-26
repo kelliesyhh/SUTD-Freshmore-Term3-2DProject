@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script>
+    </head>
+    <body style="font-family:sans-serif; font-size: 1rem;"> 
+        <h1>{{title}}</h1> 
+        <h2> 
+         In this website, you will predict the number of covid cases in the country of your choice :) 
+        </h2> 
+
+        <h2 style = "font-size: 1.5rem">
+            Choose the following that fits your country best
+        </h2>
+        <br>
+
+        <p>
+        <label for = "country">Choose your country:</label>
+        <select id="country"> 
+            <option value=9>Indonesia</option>
+            <option value=8>Hungary</option>
+            <option value=13>Mongolia</option>
+            <option value=5>Czechia</option>
+            <option value=17>Serbia</option>
+            <option value=1>Brunei</option>
+            <option value=4>Costa Rica</option>
+            <option value=14>Mauritania</option>
+            <option value=12>Monaco</option>
+            <option value=16>San Marino</option>
+            <option value=0>Bulgaria</option>
+            <option value=6>Gabon</option>
+            <option value=2>Congo</option>
+            <option value=19>Venezuela</option>
+            <option value=18>Uruguay</option>
+            <option value=10>Kazakhstan</option>
+            <option value=15>Saudi Arabia</option>
+            <option value=7>Croatia</option>
+            <option value=3>Colombia</option>
+            <option value=11>Kyrgyzstan</option>
+            <option value=20>Others</option>
+        </select>
+        </p>
+
+        <hr>
+
+        <p>
+            0 = No availability of vaccines <br>
+            1 = Availability for ONE of following: key workers/ clinically vulnerable groups / elderly groups <br>
+            2 = Availability for TWO of following: key workers/ clinically vulnerable groups / elderly groups <br>
+            3 = Availability for ALL of following: key workers/ clinically vulnerable groups / elderly groups<br>
+            4 = Availability for all three plus partial additional availability (select broad groups/ages)<br>
+            5 = Universal availability <br>
+        </p>
+        
+        <p>
+        <label for="vaccination__policy">Vaccination Policy:</label> 
+        <select id="vaccination__policy"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+            <option value=5>5</option> 
+        </select>
+        </p> 
+
+        <hr>   
+
+        <p>
+            0 = No testing policy<br>
+            1 = Testing only for those who both (a) have symptoms AND (b) meet specific criteria (e.g. key workers, admitted to hospital, came into contact with a known case, returned from overseas) <br>
+            2 = Testing of anyone showing COVID-19 symptoms<br>
+            3 = Open public testing (e.g “drive through” testing available to asymptomatic people)<br>
+        </p>
+        <p>
+        <label for="testing__policy">Testing Policy:</label> 
+        <select id="testing__policy"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+        </select>
+        </p>
+        <hr>
+        <p>
+            0 = No restrictions<br>
+            1 = Restrictions on very large gatherings (the limit is above 1000 people)<br>
+            2 = Restrictions on gatherings between 100 to 1000 people<br>
+            3 = Restrictions on gatherings between 10 to 100 people<br>
+            4 = Restrictions on gatherings of less than 10 people<br>
+        </p>
+        <p>
+        <label for="restriction__gatherings">Restriction Gatherings :</label> 
+        <select id="restriction__gatherings"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+        </select>
+        </p>
+        
+        <hr>
+
+        <p>
+            0 = No Policy <br>
+            1 = Recommended <br>
+            2 = Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br>
+            3 = Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br>
+            4 = Required outside the home at all times regardless of location or presence of other people <br>
+        </p>
+        <p>
+        <label for="facial__coverings">Facial Coverings:</label> 
+        <select id="facial__coverings"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+        </select>
+        </p>
+        
+        <hr>
+
+        <p>
+            0 = No measures<br>
+            1 = Recommended not to leave the house<br>
+            2 = Required to not leave the house with exceptions for daily exercise, grocery shopping, and 'essential' trips<br>
+            3 = Required to not leave the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.) <br>
+        </p>
+        <p>
+        <label for="stay__home">Stay Home Requirement:</label> 
+        <select id="stay__home"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option>
+        </select>
+        </p>
+
+        <hr>
+
+        <br>
+        <b>
+            Predicted Daily Covid-19 Cases per Million:
+        </b>
+
+        <p> 
+         <button onclick="library.predictcases()">PREDICT</button>
+         <div name="predictcases" id="predictcases">...</div> 
+        </p> 
+        
+        <br><a href="index">Home</a>
+
+    </body>
+</html>

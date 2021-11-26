@@ -8,7 +8,6 @@ In the website, you will be predicting:
 - The number of Covid-19 cases in the country of your choice
 based on the features you chose
 
----
 
 ## Setup
 
@@ -43,7 +42,7 @@ application.py
 requirements.txt
 app
 ```
----
+
 
 ## Create Virtual Environment (Windows)
 

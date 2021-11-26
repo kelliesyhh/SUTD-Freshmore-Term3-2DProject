@@ -30,7 +30,7 @@ $ git clone https://github.com/kelliesyhh/t3-2d-ddw.git
 Once you have downloaded the repository, you can go to the repository and to the folder called `webpage` for this mini project.
 
 ```shell
-$ cd webpage
+$ cd t3-2d-ddw\webpage
 $ ls
 ```
 
@@ -54,7 +54,7 @@ In the following steps, the Windows prompt will be represented by:
 ```
 Go to the root folder `webpage`.
 ```shell
-> cd %USERPROFILE%\Downloads\webpage
+> cd %USERPROFILE%\Downloads\t3-2d-ddw\webpage
 ```
 From the root folder, i.e. `webpage`, create virtual environment called `virtenv`.
 
@@ -87,7 +87,7 @@ $
 
 Go to the root folder `webpage`. 
 ```shell
-$ cd ~/Downloads/webpage
+$ cd ~/Downloads/t3-2d-ddw/webpage
 ```
 
 From the root folder, i.e. `webpage`, create virtual environment called `virtenv`.
@@ -140,7 +140,7 @@ The above steps will install Flask and Transcrypt Python libraries and some othe
 Javascript is the commonly used language for front-end web development. However, since this course only covers Python. We will use `Transcrypt` library which can compile and translate Python script into a Javascript file. To compile `library.py`, first we need to go into the `static` folder.
 
 ```shell
-> cd %USERPROFILE\Downloads\webpage\app\static
+> cd %USERPROFILE\Downloads\t3-2d-ddw\webpage\app\static
 > dir
 ```
 
@@ -259,7 +259,7 @@ To stop the web app type `CTRL+C`.
 Javascript is the commonly used language for front-end web development. However, since this course only covers Python. We will use `Transcrypt` library which can compile and translate Python script into a Javascript file. To compile `library.py`, first we need to go into the `static` folder.
 
 ```shell
-$ cd ~/Downloads/webpage/app/static
+$ cd ~/Downloads/t3-2d-ddw/webpage/app/static
 $ ls
 ```
 
@@ -301,7 +301,7 @@ $ cd ../..
 ```
 which means go up the folder two times. Or, simply
 ```shell
-$ cd ~/Downloads/webpage/
+$ cd ~/Downloads/t3-2d-ddw/webpage/
 ```
 
 You should see `application.py` in this root folder. Run Flask by typing:
@@ -357,7 +357,7 @@ Features:
 - Stay Home Requirement Policy
 
 
-Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can try out different combinations to see how each policy affects the number of predicted covid cases.
+Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
 
 The code will run when user press the predict button.
 

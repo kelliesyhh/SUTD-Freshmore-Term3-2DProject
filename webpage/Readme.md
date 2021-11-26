@@ -324,6 +324,7 @@ Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. Yo
 
 To stop the web app type `CTRL+C`. 
 
+
 ---
 
 ## First Prediction: Stay-Home Requirement Policy
@@ -336,7 +337,7 @@ Features:
 - Facial Coverings
 - Restriction Gatherings
 
-Based on these 4 features, we will collect the inputs and run through our model to produce a recommendations on how strict the Stay-Home Requirement Policy should be.
+Based on these 4 features, we will collect the inputs and run through our model to produce a **recommendations on how strict the Stay-Home Requirement Policy should be**.
 
 The code will run when user press the predict button.
 
@@ -360,7 +361,7 @@ Features:
 - Stay Home Requirement Policy
 
 
-Based on these 5 features, we will collect the inputs and run through our model to produce the predicted number of Covid cases the country will likely have for it to require the policies you have chosen. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
+Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
 
 The code will run when user press the predict button.
 

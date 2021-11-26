@@ -357,7 +357,7 @@ Features:
 - Stay Home Requirement Policy
 
 
-Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
+Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can try out different combinations to see how each policy affects the number of predicted covid cases.
 
 The code will run when user press the predict button.
 

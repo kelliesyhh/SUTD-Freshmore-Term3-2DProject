@@ -124,7 +124,7 @@ For Windows:
 
 For MacOS/Linux: (For Linux, you might need to type pip3 instead)
 ```shell
-$ python -m pip install -U --force-reinstall -r requirements.txt
+$ python -m pip3 install -U --force-reinstall -r requirements.txt
 ```
 
 The above steps will install Flask and Transcrypt Python libraries and some other necessary packages.

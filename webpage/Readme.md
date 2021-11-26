@@ -8,7 +8,6 @@ In the website, you will be predicting:
 - The number of Covid-19 cases in the country of your choice
 based on the features you chose
 
----
 
 ## Setup
 
@@ -31,7 +30,7 @@ $ git clone https://github.com/kelliesyhh/t3-2d-ddw.git
 Once you have downloaded the repository, you can go to the repository and to the folder called `webpage` for this mini project.
 
 ```shell
-$ cd webpage
+$ cd t3-2d-ddw\webpage
 $ ls
 ```
 
@@ -43,7 +42,7 @@ application.py
 requirements.txt
 app
 ```
----
+
 
 ## Create Virtual Environment (Windows)
 
@@ -55,7 +54,7 @@ In the following steps, the Windows prompt will be represented by:
 ```
 Go to the root folder `webpage`.
 ```shell
-> cd %USERPROFILE%\Downloads\webpage
+> cd %USERPROFILE%\Downloads\t3-2d-ddw\webpage
 ```
 From the root folder, i.e. `webpage`, create virtual environment called `virtenv`.
 
@@ -88,7 +87,7 @@ $
 
 Go to the root folder `webpage`. 
 ```shell
-$ cd ~/Downloads/webpage
+$ cd ~/Downloads/t3-2d-ddw/webpage
 ```
 
 From the root folder, i.e. `webpage`, create virtual environment called `virtenv`.
@@ -125,12 +124,12 @@ For Windows:
 
 For MacOS/Linux: (For Linux, you might need to type pip3 instead)
 ```shell
-$ python -m pip install -U --force-reinstall -r requirements.txt
+$ python -m pip3 install -U --force-reinstall -r requirements.txt
 ```
 
 The above steps will install Flask and Transcrypt Python libraries and some other necessary packages.
 
- ---
+ 
 
 ## Update and Run the files:
 
@@ -141,7 +140,7 @@ The above steps will install Flask and Transcrypt Python libraries and some othe
 Javascript is the commonly used language for front-end web development. However, since this course only covers Python. We will use `Transcrypt` library which can compile and translate Python script into a Javascript file. To compile `library.py`, first we need to go into the `static` folder.
 
 ```shell
-> cd %USERPROFILE\Downloads\webpage\app\static
+> cd %USERPROFILE\Downloads\t3-2d-ddw\webpage\app\static
 > dir
 ```
 
@@ -248,9 +247,7 @@ You should see that some output will be thrown out, which one of them would be:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
-
-![](https://www.dropbox.com/s/a2fqx5svvyqtqf9/mp1_home.png?raw=1)
+Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. 
 
 To stop the web app type `CTRL+C`. 
 
@@ -262,7 +259,7 @@ To stop the web app type `CTRL+C`.
 Javascript is the commonly used language for front-end web development. However, since this course only covers Python. We will use `Transcrypt` library which can compile and translate Python script into a Javascript file. To compile `library.py`, first we need to go into the `static` folder.
 
 ```shell
-$ cd ~/Downloads/webpage/app/static
+$ cd ~/Downloads/t3-2d-ddw/webpage/app/static
 $ ls
 ```
 
@@ -304,7 +301,7 @@ $ cd ../..
 ```
 which means go up the folder two times. Or, simply
 ```shell
-$ cd ~/Downloads/webpage/
+$ cd ~/Downloads/t3-2d-ddw/webpage/
 ```
 
 You should see `application.py` in this root folder. Run Flask by typing:
@@ -319,25 +316,24 @@ You should see that some output will be thrown out, which one of them would be:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
-
-![](https://www.dropbox.com/s/a2fqx5svvyqtqf9/mp1_home.png?raw=1)
+Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. 
 
 To stop the web app type `CTRL+C`. 
 
----
+
+
 
 ## First Prediction: Stay-Home Requirement Policy
 
 In this section of the webpage, you will choose one scale for each of the 4 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Ppolicy
-- Testing Ppolicy
+- Vaccination Policy
+- Testing Policy
 - Facial Coverings
 - Restriction Gatherings
 
-Based on these 4 features, we will collect the inputs and run through our model to produce a recommendations on how strict the Stay-Home Requirement Policy should be.
+Based on these 4 features, we will collect the inputs and run through our model to produce a **recommendations on how strict the Stay-Home Requirement Policy should be**.
 
 The code will run when user press the predict button.
 
@@ -354,14 +350,14 @@ There are 4 possible outcomes from this prediction:
 In this section of the webpage, you will first choose the country of your choice, and one scale for each of the 5 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Ppolicy
-- Testing Ppolicy
+- Vaccination Policy
+- Testing Policy
 - Facial Coverings
 - Restriction Gatherings
 - Stay Home Requirement Policy
 
 
-Based on these 5 features, we will collect the inputs and run through our model to produce the predicted number of Covid cases the country will likely have for it to require the policies you have chosen. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
+Based on these 5 features, we will collect the inputs and run through our model to produce the **predicted number of Covid cases the country will likely have for it to require the policies you have chosen**. You can tryout different combinations to see how each policy affects the number of predicted covid cases.
 
 The code will run when user press the predict button.
 

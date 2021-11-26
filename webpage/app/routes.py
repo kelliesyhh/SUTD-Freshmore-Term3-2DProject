@@ -6,10 +6,10 @@ from app import application
 def index():
     return render_template('index.html', title='CovidPrediction.com')
 
-@application.route('/ex1')
+@application.route('/prediction1')
 def exercise1():
-    return render_template('ex1.html', title='Stay Home Notice Guideline Predictor')
+    return render_template('prediction1.html', title='Stay Home Notice Guideline Predictor')
 
-@application.route('/ex2')
+@application.route('/prediction2')
 def exercise2():
-    return render_template('ex2.html', title='Covid Cases Predictor')
+    return render_template('prediction2.html', title='Covid Cases Predictor')

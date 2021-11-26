@@ -249,7 +249,7 @@ You should see that some output will be thrown out, which one of them would be:
 
 Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
 
-![](https://www.dropbox.com/s/8n6d8cor9n7qqea/landing%20page.jpg?dl=0)
+![](https://drive.google.com/file/d/1NPgodqhoo_ywYE_NAHjdDw3wy0fuPfvn/view?usp=sharing)
 
 To stop the web app type `CTRL+C`. 
 
@@ -320,7 +320,7 @@ You should see that some output will be thrown out, which one of them would be:
 
 Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
 
-![](https://www.dropbox.com/s/8n6d8cor9n7qqea/landing%20page.jpg?dl=0)
+![](https://drive.google.com/file/d/1NPgodqhoo_ywYE_NAHjdDw3wy0fuPfvn/view?usp=sharing)
 
 To stop the web app type `CTRL+C`. 
 

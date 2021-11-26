@@ -129,7 +129,7 @@ $ python -m pip install -U --force-reinstall -r requirements.txt
 
 The above steps will install Flask and Transcrypt Python libraries and some other necessary packages.
 
- ---
+ 
 
 ## Update and Run the files:
 
@@ -325,7 +325,7 @@ Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. Yo
 To stop the web app type `CTRL+C`. 
 
 
----
+
 
 ## First Prediction: Stay-Home Requirement Policy
 

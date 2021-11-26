@@ -328,8 +328,8 @@ To stop the web app type `CTRL+C`.
 In this section of the webpage, you will choose one scale for each of the 4 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Ppolicy
-- Testing Ppolicy
+- Vaccination Policy
+- Testing Policy
 - Facial Coverings
 - Restriction Gatherings
 
@@ -350,8 +350,8 @@ There are 4 possible outcomes from this prediction:
 In this section of the webpage, you will first choose the country of your choice, and one scale for each of the 5 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Ppolicy
-- Testing Ppolicy
+- Vaccination Policy
+- Testing Policy
 - Facial Coverings
 - Restriction Gatherings
 - Stay Home Requirement Policy

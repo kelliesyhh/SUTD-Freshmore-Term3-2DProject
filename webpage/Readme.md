@@ -249,7 +249,7 @@ You should see that some output will be thrown out, which one of them would be:
 
 Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
 
-![](https://www.dropbox.com/s/a2fqx5svvyqtqf9/mp1_home.png?raw=1)
+![](https://www.dropbox.com/s/8n6d8cor9n7qqea/landing%20page.jpg?dl=0)
 
 To stop the web app type `CTRL+C`. 
 
@@ -320,7 +320,7 @@ You should see that some output will be thrown out, which one of them would be:
 
 Now you can open your browser at `http://127.0.0.1:5000/` to see the web app. You should see something like the following:
 
-![](https://www.dropbox.com/s/a2fqx5svvyqtqf9/mp1_home.png?raw=1)
+![](https://www.dropbox.com/s/8n6d8cor9n7qqea/landing%20page.jpg?dl=0)
 
 To stop the web app type `CTRL+C`. 
 
@@ -332,8 +332,8 @@ To stop the web app type `CTRL+C`.
 In this section of the webpage, you will choose one scale for each of the 4 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Policy
-- Testing Policy
+- Vaccination Ppolicy
+- Testing Ppolicy
 - Facial Coverings
 - Restriction Gatherings
 
@@ -354,8 +354,8 @@ There are 4 possible outcomes from this prediction:
 In this section of the webpage, you will first choose the country of your choice, and one scale for each of the 5 features using the drop-down list. There will be descriptions to explain the criteria of each scale. Users can choose the one that best matches their country.
 
 Features:
-- Vaccination Policy
-- Testing Policy
+- Vaccination Ppolicy
+- Testing Ppolicy
 - Facial Coverings
 - Restriction Gatherings
 - Stay Home Requirement Policy

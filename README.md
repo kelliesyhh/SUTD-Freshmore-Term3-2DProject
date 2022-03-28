@@ -31,8 +31,7 @@ existing ones.
 You are free to find and define a problem (apply the discovery and define phases first, from the UK Design Council Double Diamond, 3.007 Design Thinking and Innovation) of your interest related to COVID-19. The problem can be modelled either using Linear Regression (or Multiple Linear Regression) or Logistic Regression, which means you can work with either continuous numerical data or classification.
 The following technical/tool constraint applies: you are NOT allowed to use Neural Networks or other Machine Learning models. You must use Python and Jupyter Notebook.
 In general, you may want to consider performing the following steps:
-* Find an interesting problem which you want to solve either using Linear Regression or Classification (please check with your instructors first on whether the problem makes
-sense).
+* Find an interesting problem which you want to solve either using Linear Regression or Classification (please check with your instructors first on whether the problem makes sense).
 * Find a dataset to build your model. For example, you can use Kaggle (https://www.kaggle.com/datasets) to find suitable datasets.
 * Use plots to visualize and understand your data. 
 * Create training and test data sets.
@@ -42,3 +41,11 @@ sense).
 
 ### Task 3
 Analyse and compare how different political philosophies and ideologies influence COVID-19 national policies in different countries. Furthermore, design your own COVID-19 national policy that advances the ideals of equality and justice (as defined by you on class readings and discussions).
+
+## Team Members
+SC02 Group 1
+* Chua Min Pei (1005340)
+* Eunice Kwok Xiu Yi (1005469)
+* Ng Zhen An (1005527)
+* Ryan Kaw Zheng Da (1005144)
+* Sim Yu Hui, Kellie (1004204) 

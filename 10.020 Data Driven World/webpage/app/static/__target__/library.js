@@ -1,0 +1,82 @@
+// Transcrypt'ed from Python, 2021-11-25 21:04:15
+var random = {};
+import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
+import * as __module_random__ from './random.js';
+__nest__ (random, '', __module_random__);
+var __name__ = '__main__';
+export var array = [];
+export var update_vals = function () {
+	var vac = document.getElementById ('vaccination_policy');
+	print (vac);
+	var vaccination_policy = vac.options [vac.selectedIndex].value;
+	var test = document.getElementById ('testing_policy');
+	var testing_policy = test.options [test.selectedIndex].value;
+	var facial = document.getElementById ('facial_coverings');
+	var facial_coverings = facial.options [facial.selectedIndex].value;
+	var restriction = document.getElementById ('restriction_gatherings');
+	var restriction_gatherings = restriction.options [restriction.selectedIndex].value;
+	var arr = [];
+	arr.append (vaccination_policy);
+	arr.append (testing_policy);
+	arr.append (restriction_gatherings);
+	arr.append (facial_coverings);
+	print (arr);
+	return arr;
+};
+export var predict = function () {
+	var arr = update_vals ();
+	var vaccination_policy = arr [0];
+	var testing_policy = arr [1];
+	var facial_coverings = arr [2];
+	var restriction_gatherings = arr [3];
+	var beta0 = 1.10706528;
+	var beta1 = -(0.07528005);
+	var beta2 = -(0.10102505);
+	var beta3 = 0.12522986;
+	var beta4 = 0.34782008;
+	var y = (((beta0 + beta1 * vaccination_policy) + beta2 * testing_policy) + beta3 * facial_coverings) + beta4 * restriction_gatherings;
+	var yfloor = Math.floor (y / 1);
+	var keyval = dict ([[0, 'No measures'], [1, 'Recommended not to leave the house'], [2, "Required not to leave the house with exceptions for daily exercise, grocery shopping, and 'essential' trips"], [3, 'Required to not leave the house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.)']]);
+	var result = keyval [yfloor];
+	print (result);
+	document.getElementById ('predict').innerHTML = result;
+};
+export var update_vals_cases = function () {
+	var vac = document.getElementById ('vaccination__policy');
+	print (vac);
+	var vaccination_policy = vac.options [vac.selectedIndex].value;
+	var test = document.getElementById ('testing__policy');
+	var testing_policy = test.options [test.selectedIndex].value;
+	var restriction = document.getElementById ('restriction__gatherings');
+	var restriction_gatherings = restriction.options [restriction.selectedIndex].value;
+	var facial = document.getElementById ('facial__coverings');
+	var facial_coverings = facial.options [facial.selectedIndex].value;
+	var stayh = document.getElementById ('stay__home');
+	var stay_home = stayh.options [stayh.selectedIndex].value;
+	var arr = [];
+	arr.append (vaccination_policy);
+	arr.append (testing_policy);
+	arr.append (restriction_gatherings);
+	arr.append (facial_coverings);
+	arr.append (stay_home);
+	print (arr);
+	return arr;
+};
+export var predictcases = function () {
+	var arr = update_vals_cases ();
+	var vaccination_policy = arr [0];
+	var testing_policy = arr [1];
+	var facial_coverings = arr [2];
+	var restriction_gatherings = arr [3];
+	var stay_home = arr [4];
+	var betalist = [[[30608.89458865247], [4022.245021206385], [22604.46143460738], [2038.5007539600358], [1724.5407032741266], [-(2060.5702325792276)]], [[2126.1479976470573], [212.52682048321137], [64.0480564319336], [-(349.29540328823316)], [117.37342120853494], [4500.978535000691]], [[1320.4341820330962], [334.22721511969655], [391.6756071595284], [215.01043623774277], [22.280078372985308], [-(93.09602382005562)]], [[38873.75563744073], [-(1147.6946164099293)], [33974.17242920879], [-(2148.796384008256)], [298.92598082548784], [-(2573.0287765229787)]], [[37030.64083058821], [13280.528034639903], [13136.973671756265], [13309.15002301045], [-(6851.9265296863505)], [2069.0495534135794]], [[75472.12638242275], [8234.476260345102], [62100.52511675339], [-(1634.3100943027575)], [18802.55420846467], [-(5646.598107441958)]], [[6296.601056737585], [863.4408567719405], [3622.3875962017114], [796.4649659250509], [-(837.2814682504256)], [69.74851053825321]], [[42172.02809715637], [2074.190537910149], [29899.395908022507], [5776.860216972819], [4915.534560783575], [-(2781.028280686621)]], [[38900.272849765235], [7885.005214425789], [28354.865509276267], [1087.7550346751173], [1625.7932935226736], [2085.1869376160275]], [[4655.226177985945], [-(314.79891651168606)], [4895.715968317134], [-(99.83761799585072)], [335.39825242126807], [-(124.55054187683751)]], [[16357.862070921981], [-(3065.1812650722577)], [13423.068095869934], [5157.465279930686], [-(1461.724938814956)], [5751.688908969529]], [[12193.019330166266], [134.34690441338773], [5071.721303517931], [-(15.510685066082946)], [13.762416689871069], [-(4107.787751291015)]], [[33343.22008490563], [-(1435.041999988873)], [31042.175570218857], [3224.6611837600344], [-(918.0819644976933)], [-(1012.7760472564387)]], [[18181.944201405156], [-(34849.24088364351)], [15185.165273626724], [52821.63752963086], [-(20545.14934380356)], [-(4981.458648573809)]], [[3029.0984481132064], [185.5162264695818], [1356.008466105423], [735.4361553061194], [-(395.98349291407)], [801.9790572568505]], [[9388.391638297866], [-(211.84656464931567)], [2019.526734463459], [2229.5617117038805], [131.83733607128838], [-(1153.8319541229132)]], [[78860.8234103773], [3707.4107474071325], [52740.124578820025], [12564.698996670346], [2258.15933273183], [5548.9796937166275]], [[52493.28720952378], [8608.04621712186], [38029.41412043264], [5772.774724391252], [-(1115.779283119614)], [227.01595407833437]], [[36802.43377068555], [6440.131898981612], [44157.52008344596], [-(1358.1018368167172)], [-(4488.743283296551)], [2798.146413457822]], [[5072.177496453898], [869.1595483754767], [2806.9711160701204], [1182.9067770683241], [-(732.3316114544484)], [371.8501380158209]]];
+	var countryn = document.getElementById ('country');
+	var countryname = countryn.options [countryn.selectedIndex].value;
+	var beta = betalist [countryname];
+	print (beta);
+	var y = ((((beta [0] [0] + beta [1] [0] * vaccination_policy) + beta [2] [0] * testing_policy) + beta [3] [0] * facial_coverings) + beta [4] [0] * restriction_gatherings) + beta [5] [0] * stay_home;
+	print (y);
+	document.getElementById ('predictcases').innerHTML = int (y);
+};
+
+//# sourceMappingURL=library.map

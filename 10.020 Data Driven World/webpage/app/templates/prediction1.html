@@ -1,0 +1,108 @@
+<html> 
+    <head> 
+        <title>{{title}}</title> 
+        <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script> 
+    </head> 
+ 
+    <body style="font-family:sans-serif; font-size: medium;"> 
+        <h1>{{title}}</h1> 
+        <h2> 
+         In this website, you will be predicting how strict your stay-home requirement policy should be :) 
+        </h2> 
+
+        <h2 style = "font-size: medium">
+            Choose the following that fits your country best
+        </h2>
+        <br>
+        <p>
+            0 = No availability of vaccines <br>
+            1 = Availability for ONE of following: key workers/ clinically vulnerable groups / elderly groups <br>
+            2 = Availability for TWO of following: key workers/ clinically vulnerable groups / elderly groups <br>
+            3 = Availability for ALL of following: key workers/ clinically vulnerable groups / elderly groups<br>
+            4 = Availability for all three plus partial additional availability (select broad groups/ages)<br>
+            5 = Universal availability <br>
+        </p>
+        
+        <p>
+        <label for="vaccination_policy">Vaccination Policy:</label> 
+        <select id="vaccination_policy"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+            <option value=5>5</option> 
+        </select>
+        </p> 
+
+        <hr> 
+
+        <p>
+            0 = No testing policy<br>
+            1 = Testing only for those who both (a) have symptoms AND (b) meet specific criteria (e.g. key workers, admitted to hospital, came into contact with a known case, returned from overseas) <br>
+            2 = Testing of anyone showing COVID-19 symptoms<br>
+            3 = Open public testing (e.g “drive through” testing available to asymptomatic people)<br>
+        </p>
+        <p>
+        <label for="testing_policy">Testing Policy:</label> 
+        <select id="testing_policy"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+        </select>
+        </p>
+        <hr>
+        <p>
+            0 = No restrictions<br>
+            1 = Restrictions on very large gatherings (the limit is above 1000 people)<br>
+            2 = Restrictions on gatherings between 100 to 1000 people<br>
+            3 = Restrictions on gatherings between 10 to 100 people<br>
+            4 = Restrictions on gatherings of less than 10 people<br>
+        </p>
+        <p>
+        <label for="restriction_gatherings">Restriction Gatherings :</label> 
+        <select id="restriction_gatherings"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+        </select>
+        </p>
+        
+        <hr>
+
+        <p>
+            0 = No Policy <br>
+            1 = Recommended <br>
+            2 = Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br>
+            3 = Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br>
+            4 = Required outside the home at all times regardless of location or presence of other people <br>
+        </p>
+        <p>
+        <label for="facial_coverings">Facial Coverings:</label> 
+        <select id="facial_coverings"> 
+            <option value=0>0</option> 
+            <option value=1>1</option> 
+            <option value=2>2</option> 
+            <option value=3>3</option> 
+            <option value=4>4</option> 
+        </select>
+        </p>
+        
+        <hr>
+        <br>
+        <b>
+            Advice from us:
+        </b>
+
+        <p> 
+         <button onclick="library.predict()">PREDICT</button>
+         <div name="predict" id="predict">...</div> 
+        </p> 
+
+        <br><a href="index">Home</a>
+         
+    </body> 
+</html>

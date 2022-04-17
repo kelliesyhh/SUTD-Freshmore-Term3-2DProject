@@ -1,4 +1,5 @@
-# SUTD Freshmore Term 3 2D Project
+# SUTD Term 3 - Freshmore
+# 2D Project
 
 ## Overview
 The Design Thinking Project III is a project across three subjects, and this project is being led by the elective 10.020 Data Driven World. In this project, students are expected to cohesively apply knowledge learnt in 10.020 Data Driven World, 10.022 Modelling Uncertainty, and 2.001 Global Humanities.
